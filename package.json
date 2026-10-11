@@ -1,0 +1,19 @@
+{
+  "name": "wiki-plugin-commons-machine",
+  "version": "0.1.0",
+  "description": "Federated Wiki plugin: a deterministic machine over the declarations in the lineup — roles from a manifest, conflicts as errors, listed overrides, exact rational formulas, sweeps, covenant refusal, cloud classes with freshness, and a forkable ghost scenario page. Built for the Compute Commons model.",
+  "type": "module",
+  "main": "client/commons-machine.js",
+  "files": ["client", "pages", "factory.json", "src/core"],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": { "esbuild": "^0.25.0" },
+  "author": "David Bovill",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-commons-machine.git" },
+  "bugs": { "url": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-commons-machine/issues" },
+  "homepage": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-commons-machine#readme",
+  "fedwiki": { "requires": ["wiki-plugin-method"] }
+}

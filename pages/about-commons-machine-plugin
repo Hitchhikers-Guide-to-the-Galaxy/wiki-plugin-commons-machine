@@ -1,0 +1,68 @@
+{
+ "title": "About Commons Machine Plugin",
+ "story": [
+  {
+   "type": "markdown",
+   "id": "2b9374c9cfb7f71a",
+   "text": "The Commons Machine reads the values declared on the pages to its left in the lineup, checks them against a role manifest, evaluates a versioned formula bundle in exact rational arithmetic, and emits a forkable scenario page. It was built for the Compute Commons model: a cooperative buying one AI-capable machine and sharing its hours. Plan and research wiki: [https://model.fedwiki.club/view/compute-commons-plan model.fedwiki.club]."
+  },
+  {
+   "type": "markdown",
+   "id": "da868d01c2825326",
+   "text": "## How it finds its inputs\n\nEvery input page carries a Method item whose value lines are typed facts, `5499 Capital (GBP)`. The label, units included, names a canonical key, `rig.capital_gbp`, and a page is classified into a role by the keys it declares. The manifest says which roles are required and how many of each: one rig, one covenant, one operating-costs page, one policy, at most one demand profile, any number of cloud-benchmarks snapshots, at most one page titled Overrides. A missing role, a role filled twice, or the same key declared on two pages is an error, never a guess. Values on an Overrides page shadow the others and every shadow is listed."
+  },
+  {
+   "type": "commons-machine",
+   "id": "4370ec9756341d7c",
+   "text": "PIN compute-rig model.fedwiki.club/compute-rig\nPIN membership-covenant model.fedwiki.club/membership-covenant\nPIN operating-costs model.fedwiki.club/operating-costs\nPIN demand-profile model.fedwiki.club/demand-profile\nPIN commons-policy model.fedwiki.club/commons-policy\nPIN cloud-benchmarks model.fedwiki.club/cloud-benchmarks"
+  },
+  {
+   "type": "markdown",
+   "id": "81d1aa89c2ce5b22",
+   "text": "The item above pins the live pages on model.fedwiki.club, so it computes on any site. Without PIN lines it reads the pages open to its left, and opened alone it reports the roles it cannot find.\n\n## Commands\n\n- **PIN** role Title \u2014 or role site/slug \u2014 pins a page to a role in addition to the lineup\n- **SLIDE** key min max [step] \u2014 a control; the default controls are members and contribution, and the member slider stops at the entitlement ceiling\n- **SWEEP** key v1 v2 \u2026 \u2014 a sweep; the defaults are the manifest's members, contribution and uptime sweeps\n- **HIDE** controls sweeps cloud waterfall capacity provenance \u2014 trim the dashboard\n\n## What it refuses\n\nWhen the policy says entitlement must fit sellable capacity and it does not, the machine reports the covenant unmet and withholds the surplus, in the dashboard and in every sweep row. A cloud-benchmarks page observed more than 35 days ago warns; more than 90 days ago it is refused. Formulas come from a hand-written parser over a versioned bundle; nothing in a page is ever executed.\n\n## The scenario page\n\nWrite scenario page opens a ghost: results, sources and uses, every input with its page, item and revision, the overrides and controls in force, the warnings, the bundle version and a SHA-256 of the resolved inputs. Fork it to keep it. Another client with the same page revisions and bundle version obtains the same hash and the same numbers."
+  },
+  {
+   "type": "markdown",
+   "id": "3d55d0c4a5f46659",
+   "text": "# See\n\n[[About Method Plugin]] \u00b7 [[About Reduce Plugin]] \u00b7 [https://model.fedwiki.club/view/compute-commons-machine Compute Commons Machine] \u00b7 [https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-commons-machine GitHub]"
+  }
+ ],
+ "journal": [
+  {
+   "type": "create",
+   "item": {
+    "title": "About Commons Machine Plugin",
+    "story": [
+     {
+      "type": "markdown",
+      "id": "2b9374c9cfb7f71a",
+      "text": "The Commons Machine reads the values declared on the pages to its left in the lineup, checks them against a role manifest, evaluates a versioned formula bundle in exact rational arithmetic, and emits a forkable scenario page. It was built for the Compute Commons model: a cooperative buying one AI-capable machine and sharing its hours. Plan and research wiki: [https://model.fedwiki.club/view/compute-commons-plan model.fedwiki.club]."
+     },
+     {
+      "type": "markdown",
+      "id": "da868d01c2825326",
+      "text": "## How it finds its inputs\n\nEvery input page carries a Method item whose value lines are typed facts, `5499 Capital (GBP)`. The label, units included, names a canonical key, `rig.capital_gbp`, and a page is classified into a role by the keys it declares. The manifest says which roles are required and how many of each: one rig, one covenant, one operating-costs page, one policy, at most one demand profile, any number of cloud-benchmarks snapshots, at most one page titled Overrides. A missing role, a role filled twice, or the same key declared on two pages is an error, never a guess. Values on an Overrides page shadow the others and every shadow is listed."
+     },
+     {
+      "type": "commons-machine",
+      "id": "4370ec9756341d7c",
+      "text": "PIN compute-rig model.fedwiki.club/compute-rig\nPIN membership-covenant model.fedwiki.club/membership-covenant\nPIN operating-costs model.fedwiki.club/operating-costs\nPIN demand-profile model.fedwiki.club/demand-profile\nPIN commons-policy model.fedwiki.club/commons-policy\nPIN cloud-benchmarks model.fedwiki.club/cloud-benchmarks"
+     },
+     {
+      "type": "markdown",
+      "id": "81d1aa89c2ce5b22",
+      "text": "The item above pins the live pages on model.fedwiki.club, so it computes on any site. Without PIN lines it reads the pages open to its left, and opened alone it reports the roles it cannot find.\n\n## Commands\n\n- **PIN** role Title \u2014 or role site/slug \u2014 pins a page to a role in addition to the lineup\n- **SLIDE** key min max [step] \u2014 a control; the default controls are members and contribution, and the member slider stops at the entitlement ceiling\n- **SWEEP** key v1 v2 \u2026 \u2014 a sweep; the defaults are the manifest's members, contribution and uptime sweeps\n- **HIDE** controls sweeps cloud waterfall capacity provenance \u2014 trim the dashboard\n\n## What it refuses\n\nWhen the policy says entitlement must fit sellable capacity and it does not, the machine reports the covenant unmet and withholds the surplus, in the dashboard and in every sweep row. A cloud-benchmarks page observed more than 35 days ago warns; more than 90 days ago it is refused. Formulas come from a hand-written parser over a versioned bundle; nothing in a page is ever executed.\n\n## The scenario page\n\nWrite scenario page opens a ghost: results, sources and uses, every input with its page, item and revision, the overrides and controls in force, the warnings, the bundle version and a SHA-256 of the resolved inputs. Fork it to keep it. Another client with the same page revisions and bundle version obtains the same hash and the same numbers."
+     },
+     {
+      "type": "markdown",
+      "id": "3d55d0c4a5f46659",
+      "text": "# See\n\n[[About Method Plugin]] \u00b7 [[About Reduce Plugin]] \u00b7 [https://model.fedwiki.club/view/compute-commons-machine Compute Commons Machine] \u00b7 [https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-commons-machine GitHub]"
+     }
+    ]
+   },
+   "date": 1788718600763,
+   "provenance": "Authored by an AI agent \u2014 Claude Code via the fedwiki-create-plugin skill, in dialogue with David Bovill, 2026-09-05. [https://claude.com/claude-code Claude Code]"
+  }
+ ],
+ "plugin": "commons-machine"
+}
